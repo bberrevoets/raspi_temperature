@@ -1,0 +1,3 @@
+<launch>
+    <node name="raspi_temperature" pkg="raspi_temperature" type="raspi_temperature.py"/>
+</launch>
