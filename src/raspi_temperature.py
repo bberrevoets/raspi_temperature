@@ -17,13 +17,13 @@ def talker():
     while not rospy.is_shutdown():
         br.sendTransform((0.0, 0.15, 0.0),
                          (0.0, 0.0, 0.0, 1.0),
-                         rospy.Time.now(), "rasp_temp", "base_link")
+                         rospy.Time.now(), "raspberrypi", "base_link")
         temp = os.popen("vcgencmd measure_temp").readline()
         temp = temp.replace("temp=", "")
         temp = temp[:-3]
         temperature = Temperature()
         temperature.header.stamp = rospy.Time.now()
-        temperature.header.frame_id = 'rasp_temp'
+        temperature.header.frame_id = 'raspberrypi'
         temperature.temperature = float(temp)
         temperature.variance = 0
         pub.publish(temperature)
