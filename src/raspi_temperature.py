@@ -15,7 +15,7 @@ def talker():
     br = tf.TransformBroadcaster()
     rate = rospy.Rate(1)  # 1hz
     while not rospy.is_shutdown():
-        br.sendTransform((0.0, 0.0, 0.15),
+        br.sendTransform((-0.05, 0.0, 0.10),
                          (0.0, 0.0, 0.0, 1.0),
                          rospy.Time.now(), "raspberrypi", "base_link")
         temp = os.popen("vcgencmd measure_temp").readline()
