@@ -1,12 +1,9 @@
 #!/usr/bin/env python
 '''raspi_temperature ROS Node'''
 import os
-import roslib
 import rospy
 import tf
 from sensor_msgs.msg import Temperature
-roslib.load_manifest('raspi_temperature')
-
 
 def talker():
     '''raspi_temperature Publisher'''
