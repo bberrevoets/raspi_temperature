@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>raspi_temperature</name>
-  <version>0.0.1</version>
+  <version>0.1.0</version>
   <description>Measures the core temp of a raspberry pi</description>
   <license>BSD</license>
   <author email="bert@berrevoets.net">B.N.Berrevoets</author>
