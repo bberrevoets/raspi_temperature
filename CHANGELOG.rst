@@ -1,0 +1,13 @@
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changelog for package raspi_temperature
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+0.1.0 (2018-06-03)
+-----------
+* Ready
+* Set the license
+* Cleaning up
+* Launch file added
+* updated package.xml
+* first commit
+* Contributors: B.N.Berrevoets
